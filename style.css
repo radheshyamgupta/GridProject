@@ -1,0 +1,90 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.4fr 1.5fr 1.3fr 0.8fr;
+color: azure;
+text-align: center;
+    min-height: 100vh;
+    grid-template-areas: "navbar navbar navbar navbar"
+    "sidebar main main main"
+    "sidebar box2 box3 box4"
+    "footer footer footer footer "
+    
+    ;
+    gap: 0.2rem;
+    font-size: 2rem;
+
+}
+.main{
+    background-color: blue;
+    grid-area: main;
+}
+.navbar{
+    background-color: aqua;
+    grid-area: navbar;
+}
+.sidebar{
+    background-color: blueviolet;
+    grid-area: sidebar;
+    text-align: center;
+}
+.footer{
+    background-color: rgb(163, 102, 9);
+    grid-area: footer;
+}
+.box2{
+    background-color: rgb(26, 29, 29);
+    grid-area: box2;
+}
+.box3{
+    background-color: rgb(255, 166, 0);
+    grid-area: box3;
+}
+.box4{
+    background-color: rgb(255, 0, 98);
+    grid-area: box4;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+@media only  screen  and (max-width:640px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 2fr 0.2fr 1fr 1fr 0.8fr;
+        grid-template-areas: "navbar"
+        "sidebar"
+        "main"
+        "box2"
+        "box3"
+        "box4"
+        "footer";
+    }
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+    color: black;
+
+
+}
+ul li{
+    list-style-type: none;
+
+margin-left: 3rem;
+border: 1px solid white;
+cursor: pointer;
+
+   
+}
+ul{
+    display: flex;
+  
+    
+}
+.logo{
+    border: 1px solid white;
+} 
